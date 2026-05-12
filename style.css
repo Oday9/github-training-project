@@ -116,3 +116,12 @@ body {
   margin: 15px 0;
   font-size: 18px;
 }
+
+/* Footer */
+footer {
+  background: #0a66c2;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
