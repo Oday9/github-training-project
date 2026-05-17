@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +9,7 @@
 }
 
 body {
+  padding-top: 80px;
   font-family: Arial, sans-serif;
   background: #f4f4f4;
   color: #333;
@@ -12,6 +17,10 @@ body {
 
 /* Navbar */
 .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   background: #0a66c2;
   color: white;
   display: flex;
