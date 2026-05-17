@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +9,7 @@
 }
 
 body {
+  padding-top: 80px;
   font-family: Arial, sans-serif;
   background: #f4f4f4;
   color: #333;
@@ -12,6 +17,10 @@ body {
 
 /* Navbar */
 .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   background: #0a66c2;
   color: white;
   display: flex;
@@ -44,6 +53,7 @@ body {
   color: #ddd;
 }
 
+
 /* Home */
 .home {
   display: flex;
@@ -58,7 +68,7 @@ body {
   background: white;
   padding: 40px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .home-content img {
@@ -92,6 +102,104 @@ body {
   background: #004182;
 }
 
+/* Hero Section */
+.hero {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #0a66c2;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  background: #0a66c2;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #004182;
+}
+
+/* About Section */
+.about {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.about-box {
+  background: white;
+  max-width: 800px;
+  margin: auto;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-box p {
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+
+/* Skills */
+.skills {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  width: 180px;
+  border-radius: 12px;
+  font-size: 22px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
 /* Info Section */
 .info {
   padding: 60px 20px;
@@ -109,7 +217,7 @@ body {
   margin: auto;
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .info-box p {
